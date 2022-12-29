@@ -17,9 +17,9 @@
 		CD6CBE1F295CD94400A4CDBC /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6CBE1E295CD94400A4CDBC /* AllCoinsView.swift */; };
 		CD6CBE21295CD95300A4CDBC /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6CBE20295CD95300A4CDBC /* CoinCell.swift */; };
 		CD9EE827295DED7B000612F4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE826295DED7B000612F4 /* HomeViewModel.swift */; };
-		CD9EE829295DEE21000612F4 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE828295DEE21000612F4 /* Coin.swift */; };
 		CD9EE82C295E43F9000612F4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CD9EE82B295E43F9000612F4 /* Kingfisher */; };
 		CD9EE82E295E44E9000612F4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE82D295E44E9000612F4 /* Double.swift */; };
+		CD9EE830295E54D1000612F4 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE82F295E54D1000612F4 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		CD6CBE1E295CD94400A4CDBC /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
 		CD6CBE20295CD95300A4CDBC /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		CD9EE826295DED7B000612F4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		CD9EE828295DEE21000612F4 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coin.swift; path = "Instant Cryptocurrency/Core/Home/ViewModels/Coin.swift"; sourceTree = SOURCE_ROOT; };
 		CD9EE82D295E44E9000612F4 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Double.swift; path = "Instant Cryptocurrency/Core/Home/ViewModels/Double.swift"; sourceTree = SOURCE_ROOT; };
+		CD9EE82F295E54D1000612F4 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coin.swift; path = "Instant Cryptocurrency/Core/Home/ViewModels/Coin.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,18 +108,20 @@
 		CD6CBE12295CCC5D00A4CDBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CD9EE828295DEE21000612F4 /* Coin.swift */,
+				CD9EE82F295E54D1000612F4 /* Coin.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
+			name = Model;
+			path = "Instant Cryptocurrency/Model";
+			sourceTree = SOURCE_ROOT;
 		};
 		CD6CBE13295CCC6100A4CDBC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				CD9EE82D295E44E9000612F4 /* Double.swift */,
 			);
-			path = Extension;
-			sourceTree = "<group>";
+			name = Extension;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
 		};
 		CD6CBE14295CCC6300A4CDBC /* Utlis */ = {
 			isa = PBXGroup;
@@ -233,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9EE829295DEE21000612F4 /* Coin.swift in Sources */,
 				CD6CBE1B295CCFE100A4CDBC /* TopMoversView.swift in Sources */,
 				CD6CBE1F295CD94400A4CDBC /* AllCoinsView.swift in Sources */,
 				CD6CBE21295CD95300A4CDBC /* CoinCell.swift in Sources */,
@@ -242,6 +243,7 @@
 				CD6CBE05295CCC4E00A4CDBC /* ContentView.swift in Sources */,
 				CD6CBE03295CCC4E00A4CDBC /* Instant_CryptocurrencyApp.swift in Sources */,
 				CD9EE82E295E44E9000612F4 /* Double.swift in Sources */,
+				CD9EE830295E54D1000612F4 /* Coin.swift in Sources */,
 				CD6CBE1D295CCFFF00A4CDBC /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
