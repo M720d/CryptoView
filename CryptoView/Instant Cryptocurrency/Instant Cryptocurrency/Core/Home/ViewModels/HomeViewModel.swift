@@ -10,10 +10,16 @@ import Foundation
 class HomeViewModel :ObservableObject {
     @Published var coins = [Coin]()
     @Published var topMovingCoins = [Coin]()
-    
+    var timer = Timer()
     
     init(){
         fetchCoinData()
+//        scheduledTimerWithTimeInterval()
+    }
+    
+    func scheduledTimerWithTimeInterval(){
+        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
+        timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: Selector(("fetchCoinData")), userInfo: nil, repeats: true)
     }
     
     func fetchCoinData(){
